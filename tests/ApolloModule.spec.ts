@@ -35,7 +35,7 @@ describe('ApolloModule', () => {
     const providers = result.providers[1]; // skips APOLLO_PROVIDERS
 
     it('should contain ApolloModule as ngModule', () => {
-      expect(result.ngModule).toBe(ApolloModule);
+      expect(result.ngModule === ApolloModule).toBe(true);
     });
 
     it('should provide a wrapper directly', () => {
